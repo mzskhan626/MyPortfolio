@@ -1,4 +1,4 @@
-class FormValidator {
+/*class FormValidator {
 
     public form : HTMLFormElement;
     public inputs : NodeListOf<HTMLInputElement>;
@@ -180,4 +180,4 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
   if(textArray.length) setTimeout(type, newTextDelay + 250);
 });
-
+*/

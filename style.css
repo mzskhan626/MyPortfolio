@@ -215,7 +215,7 @@ h3 .typed-text {
 
 .about-item {
     width: 100%;
-    margin: 1rem 0; /* Adjust margin for better separation between items */
+    margin: 0.5rem 0; /* Adjust margin for better separation between items */
 }
 .language {
     margin-bottom: 15px;
@@ -241,13 +241,18 @@ h3 .typed-text {
     background: var(--accent-color);
 }
 
-
+.english{
+    width: 100%;
+}
 .hindi {
     width: 95%;
 }
 
 .urdu {
     width: 93%;
+}
+.french{
+    width: 40%;
 }
 .skill {
     background-color: var(--accent-color);
