@@ -14,6 +14,9 @@
   },
   "dependencies": {
     "@snowpack/plugin-typescript": "^1.2.1",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
     "nodemailer": "^6.9.7",
     "typescript": "^5.0.4"
   }
