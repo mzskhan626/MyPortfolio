@@ -100,7 +100,7 @@ function submitForm() {
   formData.append("message", message);
 
   // Simulate AJAX submission using Fetch API
-  fetch("", {
+  fetch("http://localhost:3000/send-email", {
     method: "POST",
     body: formData,
   })

@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(morgan("combined"));
 
 // Your route to check server status
-app.post("/check-status", (req, res) => {
+app.get("/check-status", (req, res) => {
   // Respond immediately to the client
   res.status(200).send("The server is working. It works!");
 });
@@ -20,22 +20,23 @@ app.post("/check-status", (req, res) => {
 // Your route to handle incoming data and send email
 app.post("/send-email", (req, res) => {
   // Assuming your form has an input field with the name 'email'
+  console.debug(JSON.stringify(req.body));
   const recipientEmail = req.body.email;
-
+  console.log(`Recipient EMail: ${recipientEmail}`);
   // Nodemailer configuration
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "mzskhan626@gmail.com", // replace with your email
-      pass: "your-email-password", // replace with your email password
+      user: "jkhan266@gmail.com", // replace with your email
+      pass: `${process.env.APP_PASSWORD}`, // replace with your email password. Just simply do export APP_PASSWORD="Your Passowrd" in terminal.
     },
   });
 
   const mailOptions = {
-    from: "mzskhan626@gmail.com", // replace with your email
+    from: "jkhan266@gmail.com", // replace with your email
     to: recipientEmail,
-    subject: "Subject of the email",
-    text: "Body of the email",
+    subject: `${req.body.subject}`,
+    text: `${req.body.text}`,
   };
 
   // Sending email

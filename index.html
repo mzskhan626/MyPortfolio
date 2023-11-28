@@ -8,6 +8,7 @@
     <title>Mohammed Khan portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="animation.js" defer></script>
+    <script src="validation.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -362,7 +363,8 @@
 
                 <section class="content-card contact" id="contact">
                     <h1 style="font-family: 'Island Moments', cursive; font-size:50px">Contact</h1>
-                    <form class="form" id="form" action="/send-email" method="post" onsubmit="return validateForm();">
+                    <form class="form" id="form" action="http://localhost:3000/send-email" method="post" >
+                    <!-- onsubmit="return validateForm();"> -->
                         <div class="input-box">
                             <input type="text" id="name" class="text-input" name="name" placeholder="Name" min="3" max="25" required/>
                         </div>
@@ -387,8 +389,7 @@
     <div id="footer">
     <footer><p>&copy; Copyright 2023 Mohammed Khan</p></footer>
 </div>
-<script src="validation.js"></script>
-<script src="src/app.js"></script>
+<!-- <script src="validation.js"></script> -->
 </body>
 
 </html>
