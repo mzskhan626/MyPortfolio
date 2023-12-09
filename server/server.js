@@ -40,14 +40,14 @@ app.post("/send-email", (req, res) => {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "jkhan266@gmail.com", // replace with your email
+      user: "mzskhan626@gmail.com", // replace with your email
       pass: `${process.env.APP_PASSWORD}`, // replace with your email password. Just simply do export APP_PASSWORD="Your Passowrd" in terminal.
     },
   });
 
   const mailOptionsNotification = {
-    from: "jkhan266@gmail.com", // replace with your email
-    to: "jkhan266@gmail.com",
+    from: "mzskhan626@gmail.com", // replace with your email
+    to: "mzskhan626@gmail.com",
     subject: `${req.body.subject}`,
     html: `<b>Client Name:</b> ${req.body.name}<br><b>EMail Address:</b> ${req.body.email}<br><b>Message:</b><br> ${req.body.text}<br><br>source:https://mzskhan626.github.io/MyPortfolio/`
   }
@@ -62,7 +62,7 @@ app.post("/send-email", (req, res) => {
   });
 
   const mailOptionsCustomer = {
-    from: "jkhan266@gmail.com", // replace with your email
+    from: "mzskhan626@gmail.com", // replace with your email
     to: recipientEmail,
     subject: `Auto Respones: ${req.body.subject} | Mohammed Khan`,
     // text: email_body_generator(req.body.name),
