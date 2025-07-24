@@ -1,6 +1,6 @@
 # 🌐 Mohammed Khan - Developer Portfolio
 
-Welcome to my personal portfolio website, built to showcase my work, skills, and experience as a Full Stack Developer and AI Enthusiast.
+Welcome to my personal portfolio website, built to showcase my work, skills, and experience as a Full Stack Developer, Software Engineer and AI Enthusiast.
 
 ## 🚀 Live Preview
 
