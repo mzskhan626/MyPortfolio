@@ -507,6 +507,11 @@ textarea {
 }
 
 @media screen and (max-width: 750px) {
+    
+    /* Make the grid single column for mobile */
+    #projects > div {
+        grid-template-columns: 1fr !important;
+    }
     .col-2 {
         grid-template-columns: 1fr;
     }
